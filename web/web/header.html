@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <div class="outerWrap">
+        <header class="header">
+            <div class="h_container">
+                <h1 class="logo"><a href="index.html"><img src="../images/index/logo_phone.svg" alt=""></a></h1>
+                <div class="menu_icon">
+                    <div class="icon">
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <nav class="navbar">
+                        <ul class="nav_ul">
+                            <li><a href="about.html">關於我們<br><span class="option_en">About us</span></a></li>
+                            <li><a href="products.html">氧氣植栽<br><span class="option_en">O2 Plants</span></a></li>
+                            <li><a href="news.html">最新消息<br><span class="option_en">O2 News</span></a></li>
+                            <li><a href="contact.html">聯絡我們<br><span class="option_en">Contact us</span></a></li>
+                            <li><a href="faq.html">植栽Q&A<br><span class="option_en">Planting Q&A</span></a></li>
+                        </ul>
+                        <div class="menu_info">
+                            <div class="sub_info_1 primary_color">都市植栽專賣</div>
+                            <div class="sub_info_2 primary_color">O2 Maker</div>
+                            <div class="outLink">
+                                <a href="javascript:void(0)">
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="outLink">
+                                <a href="javascript:void(0)">
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="outLink">
+                                <a href="javascript:void(0)">
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="outLink">
+                                <a href="javascript:void(0)">
+                                    <span class="fa-stack fa-1x">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div> 
+                    </nav>
+                    <h5>台中市南區興大路1號</h5>
+                    <h5>04-21345678</h5>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            
+        </main>
+    </div>
+
+    <!-- 以下掛載 jQuery 主程式 -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(".menu_icon").on("click", function(){
+            $(".icon div:first-child").toggleClass("barTurn_1");
+            $(".icon div:last-child").toggleClass("barTurn_2");
+            $(".icon").toggleClass("cc");
+            $(".menu").fadeToggle(300);
+        }); //phone menu end
+
+        if($(window).outerWidth() >= 1025){
+            $(".logo img").attr("src", "../images/index/logo_pc.svg");
+        }else{
+            $(".logo img").attr("src", "../images/index/logo_phone.svg");
+        };
+
+        $(window).resize(function(){
+            if($(window).outerWidth() >= 1025){
+                $(".logo img").attr("src", "../images/index/logo_pc.svg");
+            }else{
+                $(".logo img").attr("src", "../images/index/logo_phone.svg");
+            }
+        }); //switch logo end
+
+    </script>
+</body>
+</html>
