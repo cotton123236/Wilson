@@ -174,7 +174,7 @@ body{
     .logo{
         height: 260px;
         padding: 15px 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10%;
     }
     .menu_icon{
         display: none;
@@ -191,7 +191,7 @@ body{
     }
     .nav_ul li{
         padding: 0;
-        height: 60px;
+        height: 35%;
     }
     .nav_ul a{
         font-size: 14px;
@@ -275,8 +275,8 @@ canvas{
 .container{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    width: 80%;
+    align-items: center;
+    width: 65%;
     margin: auto;
     margin-top: 150px;
 }
@@ -308,6 +308,7 @@ canvas{
 .photo{
     position: relative;
     width: 47%;
+    max-width: 500px;
 }
 .photo img{
     width: 100%;

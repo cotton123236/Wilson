@@ -174,7 +174,7 @@ body{
     .logo{
         height: 260px;
         padding: 15px 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10%;
     }
     .menu_icon{
         display: none;
@@ -191,7 +191,7 @@ body{
     }
     .nav_ul li{
         padding: 0;
-        height: 60px;
+        height: 35%;
     }
     .nav_ul a{
         font-size: 14px;
@@ -286,7 +286,7 @@ canvas{
 .b_text{
     position: relative;
     width: 40%;
-    max-width: 450px;
+    /* max-width: 600px; */
     letter-spacing: 0.4em;
     color: #808080;
 }
@@ -307,7 +307,7 @@ canvas{
 }
 .b_photo{
     width: 55%;
-    max-width: 600px;
+    max-width: 750px;
     position: relative;
 }
 .b_photo img{
@@ -364,7 +364,7 @@ canvas{
 .c_photo{
     position: relative;
     width: 55%;
-    max-width: 600px;
+    max-width: 750px;
 }
 .c_photo img{
     width: 100%;
@@ -384,7 +384,7 @@ canvas{
 .c_text{
     position: relative;
     width: 40%;
-    max-width: 450px;
+    /* max-width: 450px; */
     letter-spacing: 0.4em;
     color: #808080;
 }
@@ -444,6 +444,7 @@ canvas{
 .i_text{
     position: relative;
     width: 420px;
+    margin: 10%;
     display: flex;
     align-items: center;
 }
@@ -503,7 +504,7 @@ canvas{
 .i_map{
     position: relative;
     width: 55%;
-    max-width: 600px;
+    max-width: 750px;
 }
 .i_map::before{
     content: "";

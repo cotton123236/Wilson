@@ -174,7 +174,7 @@ body{
     .logo{
         height: 260px;
         padding: 15px 30px;
-        margin-bottom: 30px;
+        margin-bottom: 10%;
     }
     .menu_icon{
         display: none;
@@ -191,7 +191,7 @@ body{
     }
     .nav_ul li{
         padding: 0;
-        height: 60px;
+        height: 35%;
     }
     .nav_ul a{
         font-size: 14px;
@@ -420,13 +420,13 @@ canvas{
     }
     .arrow{
         width: 12%;
-        top: 20%;
+        top: 23%;
         left: 23%;
         animation: rotate_3 3s infinite;
     }
     .search_bar{
         left: 30%;
-        top: 15%;
+        top: 18%;
     }
 }
 /* ======================langing end====================== */
@@ -436,7 +436,7 @@ canvas{
 }
 .about_area .container{
     margin: auto;
-    margin-top: 140px;
+    margin-top: 250px;
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -444,7 +444,7 @@ canvas{
 }
 .a_text{
     width: 55%;
-    max-width: 640px;
+    max-width: 750px;
     flex-grow: 1;
     flex-shrink: 1;
     display: flex;
@@ -547,7 +547,7 @@ h2::after{
 }
 .a_photo{
     width: 45%;
-    max-width: 450px;
+    max-width: 600px;
     position: relative;
 }
 .a_photo_2{
@@ -567,6 +567,7 @@ h2::after{
     height: 100%;
     border: 1px solid #c1da75;
     border-radius: 50%;
+    animation: circle_1 3s infinite;
 }
 .a_photo::after{
     content: "";
@@ -578,10 +579,11 @@ h2::after{
     height: 100%;
     border: 1px solid #c1da75;
     border-radius: 50%;
+    animation: circle_2 3s infinite;
 }
 .leaf_1{
     position: absolute;
-    width: 32%;
+    width: 30%;
     bottom: -40%;
     left: -40px;
     z-index: 2;
@@ -594,6 +596,16 @@ h2::after{
     0%{ left: 15px; width: 0px; }
     50%{ left: 15px; width: 120px; }
     100%{ left: 135px; width: 0px; }
+}
+@keyframes circle_1{
+    0%{ top:5px; }
+    50%{ top:25px; }
+    100%{ top:5px; }
+}
+@keyframes circle_2{
+    0%{ top:7px; }
+    50%{ top:27px; }
+    100%{ top:7px; }
 }
 @media screen and ( max-width:1024px ){
     .about_area .container{
@@ -665,7 +677,7 @@ h2::after{
 }
 .products_area .container{
     margin: auto;
-    margin-top: 140px;
+    margin-top: 250px;
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -673,7 +685,7 @@ h2::after{
 }
 .p_photoArea{
     width: 60%;
-    max-width: 640px;
+    max-width: 850px;
     position: relative;
 }
 .p_inner a{
@@ -681,7 +693,7 @@ h2::after{
 }
 .p_photo{
     position: relative;
-    margin: 10px;
+    margin: 5%;
     transition: 0.4s;
 }
 .p_photo_2{
@@ -698,6 +710,7 @@ h2::after{
     height: 100%;
     border: 1px solid #c1da75;
     border-radius: 50%;
+    /* animation: circle_3 3s infinite; */
 }
 .p_photo::after{
     content: "";
@@ -709,6 +722,7 @@ h2::after{
     height: 100%;
     border: 1px solid #c1da75;
     border-radius: 50%;
+    /* animation: circle_4 3s infinite; */
 }
 .p_photo:hover{
     transform: scale(1.1);
@@ -738,7 +752,7 @@ h2::after{
     justify-content: center;
     align-items: center;
     width: 40%;
-    max-width: 450px;
+    max-width: 590px;
 }
 .p_title{
     align-self: flex-start;
@@ -772,8 +786,8 @@ h2::after{
 }
 .leaf_3{
     position: absolute;
-    width: 12%;
-    bottom: -30%;
+    width: 11%;
+    bottom: -32%;
     right: 15%;
     z-index: 2;
 }
@@ -782,6 +796,16 @@ h2::after{
 }
 .fake_title{
     display: none;
+}
+@keyframes circle_3{
+    0%{ top:2px; right:2px }
+    50%{ top:7px; right:4px }
+    100%{ top:2px; right:2px }
+}
+@keyframes circle_4{
+    0%{ top:5px; right:3px }
+    50%{ top:10px; right:5px }
+    100%{ top:5px; right:3px }
 }
 @media screen and ( max-width:1024px ){
     .products_area .container{
@@ -858,7 +882,7 @@ h2::after{
 /* ======================products end====================== */
 .news_area .container{
     margin: auto;
-    margin-top: 140px;
+    margin-top: 250px;
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -872,7 +896,7 @@ h2::after{
     flex-direction: column;
     align-items: center;
     width: 45%;
-    max-width: 460px;
+    max-width: 640px;
 }
 .n_name{
     margin: 15px 0;
@@ -881,7 +905,7 @@ h2::after{
 }
 .n_description{
         width: 85%;
-        max-width: 410px;
+        max-width: 440px;
 }
 .n_time{
     letter-spacing: 0.4em;
@@ -899,11 +923,12 @@ h2::after{
 .news_area>.container>a{
     display: block;
     width: 55%;
+    max-width: 750px;
 }
 .n_photo{
     position: relative;
     width: 100%;
-    max-width: 640px;
+    /* max-width: 640px; */
 }
 .n_photo_2{
     border-radius: 10px;
@@ -932,6 +957,7 @@ h2::after{
     border: 1px solid #c1da75;
     border-radius: 10px;
     z-index: 1;
+    animation: circle_5 3s infinite;
 }
 .n_photo::after{
     content: "";
@@ -943,6 +969,17 @@ h2::after{
     height: 100%;
     border: 1px solid #c1da75;
     border-radius: 10px;
+    animation: circle_6 3s infinite;
+}
+@keyframes circle_5{
+    0%{ top:10px; }
+    50%{top:2px; }
+    100%{top:10px;  }
+}
+@keyframes circle_6{
+    0%{ top:14px; }
+    50%{ top:6px; }
+    100%{ top:14px; }
 }
 @media screen and ( max-width:1024px ){
     .news_area .container{
@@ -952,7 +989,7 @@ h2::after{
         display: none;
     }
     .n_photo{
-        width: 85%;
+        width: 100%;
         max-width: 750px;
         margin: 30px 0;
     }
@@ -966,6 +1003,9 @@ h2::after{
     .n_text{
         width: 80%;
         max-width: 540px;
+    }
+    .news_area>.container>a{
+        width: 70%;
     }
 }
 @media screen and ( max-width:767px ){
@@ -997,12 +1037,15 @@ h2::after{
         top: 4px;
         left: 6px;
     }
+    .news_area>.container>a{
+        width: 100%;
+    }
 }
 
 /* ======================news end====================== */
 /* ======================news end====================== */
 .bot_area{
-    margin-top: 140px;
+    margin-top: 200px;
     overflow: hidden;
 }
 .bot_area img{
