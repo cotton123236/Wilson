@@ -223,6 +223,11 @@ body{
         bottom: -50px;
     }
 }
+@media screen and ( min-width:1600px ){
+    .logo{
+        margin-bottom: 60%;
+    }
+}
 
 /* ======================header end====================== */
 /* ======================header end====================== */
